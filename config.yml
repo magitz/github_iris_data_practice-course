@@ -1,0 +1,18 @@
+title: github_Iris_data_practice
+description: >-
+  A tutorial on using github.com to develop a Bash script for a simple analysis
+  of a dataset.
+template:
+  repo: github_iris_data_practice-template
+  name: github_iris_data_practice
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
